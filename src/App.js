@@ -9,9 +9,9 @@ import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { Reservation } from "./pages/Reservation";
 // import Peliculas from "./pages/Peliculas";
-// import Cines from "./pages/Cines";
+import { Cines } from "./pages/Cines";
 // import Promociones from "./pages/Promociones";
-// import Alimentos from "./pages/Alimentos";
+import { Alimentos } from "./pages/Alimentos";
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/reservas" element={<Reservation />} />
+        <Route path="/alimentos" element={<Alimentos />} />
+        <Route path="/cines" element={<Cines />} />
         {/* <Route path="/peliculas" element={<Peliculas />} />
         <Route path="/cines" element={<Cines />} />
         <Route path="/promociones" element={<Promociones />} />
