@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const productos = [
   {
@@ -41,17 +42,32 @@ const productos = [
 
 export function ComidaCine() {
   return (
-    <div className="container mt-5">
-      <h2 className="text-center mb-4">🍿 Menú de Alimentos</h2>
-      <div className="row">
+    <div className="container-fluid py-5 px-3" style={{ backgroundColor: '#f0f8ff' }}>
+      <div className="text-center mb-5">
+        <h2
+          className="fw-bold text-primary"
+          style={{ fontFamily: "'Cinzel Decorative', serif" }}
+        >
+           Menú del Cine
+        </h2>
+        <p className="text-secondary">¡Disfruta tus snacks favoritos durante la función!</p>
+      </div>
+
+      <div className="row justify-content-center">
         {productos.map((item, idx) => (
-          <div key={idx} className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0">
-              <div className="card-body text-center">
-                <i className={`bi ${item.icono} display-4 text-primary mb-3`}></i>
-                <h5 className="card-title">{item.nombre}</h5>
-                <p className="card-text text-muted">{item.descripcion}</p>
-                <span className="badge bg-success fs-6">{item.precio}</span>
+          <div key={idx} className="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div
+              className="card h-100 text-center border-0 shadow-sm"
+              style={{ backgroundColor: '#ffffff', borderRadius: '16px' }}
+            >
+              <div className="card-body d-flex flex-column justify-content-between">
+                <i
+                  className={`bi ${item.icono} text-info`}
+                  style={{ fontSize: '2.5rem' }}
+                ></i>
+                <h5 className="card-title mt-3 text-dark fw-semibold">{item.nombre}</h5>
+                <p className="card-text text-muted small">{item.descripcion}</p>
+                <span className="badge bg-primary fs-6">{item.precio}</span>
               </div>
             </div>
           </div>
