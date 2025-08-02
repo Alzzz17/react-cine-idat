@@ -7,7 +7,7 @@
   max-width: 300px;
   flex-grow: 1;
   text-align: center;
-  /* No animation */
+
 }
 
 .card-filter label {
@@ -28,7 +28,7 @@
   text-align: center;
 }
 .btn-filter {
-  background-color: #0d47a1; /* azul oscuro */
+  background-color: #0d47a1; 
   color: white;
   border: none;
   padding: 0.7rem 2.5rem;
@@ -41,5 +41,5 @@
 }
 
 .btn-filter:hover {
-  background-color: #1565c0; /* azul un poco más claro al pasar el mouse */
+  background-color: #1565c0; 
 }
